@@ -2,7 +2,7 @@
 Angular Resource + Typescript using generics
 
 I wanted to use angular resource without coding a resource factory for every entity and I came up with this project.
-Using typescript and generics we can achieve it. Have a look to the resourceService.ts file you will see.
+Using typescript and generics we can achieve it. Have a look to the resourceService.ts file and you will see.
 
 I have used angular-mocks and a dataService for the backend.
 In order to give a little bit of life to the page I used angular-material.
