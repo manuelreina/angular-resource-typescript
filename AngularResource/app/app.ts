@@ -1,4 +1,4 @@
-﻿angular.module('resourceApp', ['ngResource', 'ngMockE2E', 'ngMaterial'])
+﻿angular.module('resourceApp', ['ngResource', 'ngMockE2E', 'ngMaterial', 'mra.crudResource'])
     .config(config);
 
 config.$inject = [];

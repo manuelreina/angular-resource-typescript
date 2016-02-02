@@ -7,15 +7,15 @@
 }
 
 class personController {
-    static $inject = ['resourceService', 'mockService', '$mdToast'];
+    static $inject = ['crudService', 'mockService', '$mdToast'];
 
-    constructor(private resourceService: IResourceService,
+    constructor(private resourceService: ICRUDService,
         private mockService: IMockService,
         private toastService: ng.material.IToastService) {
         
         this.mockService.setHttpBackend();
         this.personResource = this.resourceService
-            .crudResource<IPerson>('/persons/:personId', { personId: '@personId' });
+            .resource<IPerson>('/persons/:personId', { personId: '@personId' });
         
         this.persons = this.personResource.query();
     }

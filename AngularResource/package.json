@@ -10,6 +10,7 @@
     "angular-material": "^1.0.1",
     "angular-mocks": "^1.4.8",
     "angular-resource": "^1.4.8",
+    "crud-angular-resource": "^1.0.0",
     "font-awesome": "^4.5.0",
     "tsd": "^0.6.5"
   }

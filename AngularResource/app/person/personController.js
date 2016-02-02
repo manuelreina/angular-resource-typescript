@@ -5,7 +5,7 @@ var personController = (function () {
         this.toastService = toastService;
         this.mockService.setHttpBackend();
         this.personResource = this.resourceService
-            .crudResource('/persons/:personId', { personId: '@personId' });
+            .resource('/persons/:personId', { personId: '@personId' });
         this.persons = this.personResource.query();
     }
     personController.prototype.update = function (person) {
@@ -34,7 +34,7 @@ var personController = (function () {
             });
         }
     };
-    personController.$inject = ['resourceService', 'mockService', '$mdToast'];
+    personController.$inject = ['crudService', 'mockService', '$mdToast'];
     return personController;
 })();
 angular.module('resourceApp').controller('personController', personController);
