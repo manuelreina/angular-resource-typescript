@@ -1,4 +1,4 @@
-# angular-resource-typescript
+# angular-resource-typescript (outdated)
 Angular Resource + PUT Action decriptor using Typescript and generics
 
 As far as I know angular-resource doesn't have the PUT action decriptor because not everyone use this HTTP verb for their CRUD operations.
